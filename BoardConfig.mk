@@ -90,3 +90,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
+
+# Android Verified Boot
+BOARD_AVB_ENABLE := false
