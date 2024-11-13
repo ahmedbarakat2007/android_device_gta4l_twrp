@@ -125,3 +125,7 @@ TARGET_USES_LOGD := true
 
 #storage
 RECOVERY_SDCARD_ON_DATA := true
+
+#prop
+TW_INCLUDE_LIBRESETPROP := true
+TW_INCLUDE_RESETPROP := true
