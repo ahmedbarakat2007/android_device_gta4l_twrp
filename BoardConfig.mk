@@ -107,7 +107,7 @@ PLATFORM_VERSION := 99
 
 
 # TWRP specific build flags
-TW_THEME := landscape_xhdpi
+TW_THEME := landscape_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_DEFAULT_BRIGHTNESS := 255 #from overlays 
 TW_INPUT_BLACKLIST := "hbtp_vm"
