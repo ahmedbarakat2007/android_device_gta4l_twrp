@@ -93,3 +93,8 @@ TARGET_BOARD_PLATFORM := bengal
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := false
+
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+
