@@ -123,6 +123,10 @@ TWRP_EVENT_LOGGING := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
+#bettery
+TW_BATTERY_PATH := /sys/class/power_supply/battery
+TW_BATTERY_CAPACITY_PATH := $(TW_BATTERY_PATH)/capacity
+
 #storage
 RECOVERY_SDCARD_ON_DATA := true
 
