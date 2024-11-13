@@ -99,15 +99,16 @@ BOARD_AVB_ENABLE := false
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_HAS_FLIPPED_SCREEN := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 99
 
-
 # TWRP specific build flags
-TW_THEME := landscape_hdpi
+TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_DEFAULT_BRIGHTNESS := 255 #from overlays 
 TW_INPUT_BLACKLIST := "hbtp_vm"
