@@ -3,7 +3,6 @@
 /dtbo               emmc         /dev/block/bootdevice/by-name/dtbo              flags=backup=1;flashimg=1;display="DTBO"
 /recovery           emmc         /dev/block/bootdevice/by-name/recovery          flags=backup=1;flashimg=1;display="recovery"
 /vbmeta_samsung     emmc         /dev/block/bootdevice/by-name/vbmeta_samsung    flags=display=vbmeta_samsung
-/vbmeta             emmc         /dev/block/bootdevice/by-name/vbmeta            flags=backup=1;flashimg=1;display="vbmeta"
 
 # Direct image flashing
 /system_image       emmc         /dev/block/bootdevice/by-name/system            flags=backup=1;flashimg=1
@@ -13,8 +12,6 @@
 
 # ETC Moint Point
 /cache              ext4         /dev/block/bootdevice/by-name/cache
-/efs                ext4         /dev/block/bootdevice/by-name/efs               flags=display="EFS";backup=1
-/sec_efs            ext4         /dev/block/bootdevice/by-name/sec_efs           flags=display="Sec EFS";backup=1
 
 #frimware
 /omr		        ext4		/dev/block/bootdevice/by-name/omr		         flags=wipeingui;display="OMR"
