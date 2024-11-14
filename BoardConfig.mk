@@ -8,6 +8,8 @@
 DEVICE_PATH := device/samsung/gta4l
 
 ALLOW_MISSING_DEPENDENCIES := true
+# PRODUCT_COPY_FILES directives.
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -115,6 +117,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_DEFAULT_BRIGHTNESS := 255 #from overlays 
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 
 #bootloader
 TW_NO_REBOOT_BOOTLOADER := true

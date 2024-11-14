@@ -1,1 +1,3 @@
-
+# USB
+vendor.usb.use_ffs_mtp=1
+ro.boot.bootdevice=soc/4744000.sdhci
