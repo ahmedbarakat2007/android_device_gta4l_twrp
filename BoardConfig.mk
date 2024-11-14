@@ -118,6 +118,10 @@ TW_DEFAULT_BRIGHTNESS := 255 #from overlays
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+TW_INCLUDE_NTFS_3G := true
 
 #bootloader
 TW_NO_REBOOT_BOOTLOADER := true
@@ -128,9 +132,13 @@ TWRP_EVENT_LOGGING := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-#bettery
+#Battey [ this is a peace of shit made by me :) ]
 TW_BATTERY_PATH := /sys/class/power_supply/battery
 TW_BATTERY_CAPACITY_PATH := $(TW_BATTERY_PATH)/capacity
+BOARD_POWER_PROFILE := high_performance
+
+check_battery_capacity:
+    @echo "bettry is: $(shell cat $(TW_BATTERY_CAPACITY_PATH))%"
 
 #storage
 RECOVERY_SDCARD_ON_DATA := true
@@ -138,3 +146,14 @@ RECOVERY_SDCARD_ON_DATA := true
 #prop
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
+
+
+#extra cheeseburger
+
+BOARD_PROVIDES_GPTUTILS := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+TW_USE_LEDS_HAPTICS := true
+USE_RECOVERY_INSTALLER := true
+TW_EXCLUDE_TWRPAPP := true
+TW_HAS_EDL_MODE := true
+TW_NO_USB_STORAGE := true
