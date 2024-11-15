@@ -137,8 +137,6 @@ TW_BATTERY_PATH := /sys/class/power_supply/battery
 TW_BATTERY_CAPACITY_PATH := $(TW_BATTERY_PATH)/capacity
 BOARD_POWER_PROFILE := high_performance
 
-check_battery_capacity:
-    @echo "bettry is: $(shell cat $(TW_BATTERY_CAPACITY_PATH))%"
 
 #storage
 RECOVERY_SDCARD_ON_DATA := true
